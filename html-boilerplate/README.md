@@ -1,1 +1,1 @@
-Reference: (Lesson)[https://www.theodinproject.com/lessons/foundations-html-boilerplate]
+Reference: [Lesson](https://www.theodinproject.com/lessons/foundations-html-boilerplate)
