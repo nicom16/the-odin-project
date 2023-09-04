@@ -1,0 +1,32 @@
+<!-- Practicing the usage of links and images in HTML --!>
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Using links and images</title>
+  </head>
+
+  <body>
+    <h2>Putting together some different kind of links</h2>
+    <a href="https://google.com/">A test link to Google</a>
+
+    <br>
+
+    <a href="./pages/test.html">This is a relative link to a test page</a>
+    <!-- NOTE: as suggested in the lesson I'm using 'rel="nopener"' for security reasons, in order to prevent the sobstutution of the link and avoid possible phishing attacks --!>
+    <a href="./pages/test.html" target="_blank" rel="noopener noreferrer">If you want to open it in a new tab, click here!</a>
+    
+    <br>
+
+    <h2>Now let's use some images</h2>
+    <br>
+    <!-- Relative path --!>
+    <img src="./images/Screamadelica.png" alt="A cool album cover!">
+    <br>
+    <!-- Absolute path to external resource --!>
+    <img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project logo">
+  </body>
+</html>
+
