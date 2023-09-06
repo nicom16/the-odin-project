@@ -1,0 +1,68 @@
+/* Summary of the most important CSS selectors */
+
+/* Universal: applies proprieties to everything */
+* {
+  color: black;
+}
+
+/* Type: applies proprieties based on type (ex: <p>, <div>, <h1>...)*/
+
+p {
+  color: black;
+}
+
+/* Class: applies proprieties based on class added to HTML element (ex: <p class="example">) */
+.example {
+  color: red;
+}
+
+/* ID: applies proprieties based on ID added to HTML element (ex: <p id="example">), similar to class but unique and unrepeatable in a single page */
+#example {
+  color: white;
+}
+
+/* Grouping: shares some proprieties between selectors */
+.alert,
+.severe-alert {
+  color: red;
+}
+
+/* Chaining: selects only the elements with the specified classes/IDs (no more than one type selector) */
+.subsection.header {
+  color: purple;
+}
+
+.subsection#title {
+  color: blue;
+}
+
+/* The descendant combinator: selects only the elements that have the last selector as selector and the previous as parents */
+.parent .child {
+  background-color: red;
+}
+
+/* Some frequent proprieties */
+p {
+  color: white; /* Colors can be keyword, #hex, rgb(), hsl() */
+  background-color: black;
+  font-family: "Times New Roman", serif; /* Should be a list of fonts/families in order to prevent incompatibility (the last one is the most generic) */
+  font-size: 15px;
+  font-weight: bold; /* Can be keyword or 100-900 value */
+  text-align: center;
+}
+
+/* Important: always set image height and width to prevent no space on the page while loading*/
+img {
+  height: auto;
+  width: 700px;
+}
+
+/* 
+ * CSS can be linked to HTML in 3 ways:
+ * - By adding "<link rel="stylesheet" href="path">" tiside di <head> tags;
+ * - By adding a <style> tag in the HTML file
+ * - By adding the style="..." attribute to a tag
+ *
+ */
+
+/* Assignment: complete "Foundation" exercises in CSS exercises repo */
