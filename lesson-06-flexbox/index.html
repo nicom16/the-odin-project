@@ -1,0 +1,36 @@
+<!-- IMPORTANT! CSS is embedded with <style> because of personal compatibility issues, I'm awere that this practice isn't recommended and I use the external method in my projects! --!>
+
+<!-- Flexboxes -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Flexboxes!</title>
+
+    <style>
+      .flex-container {
+        display: flex; 
+      }
+
+      /* this selector selects all divs inside of .flex-container */
+      .flex-container div {
+        background: peachpuff;
+        border: 4px solid brown;
+        height: 100px;
+        flex: 1; 
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+    </div>
+  </body>
+
+</html>
