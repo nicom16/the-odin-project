@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Shopping list</title>
+  </head>
+  
+  <body>
+    <h1>Your shopping list!</h1>
+    <div>
+      <label for="item">Add one item to the list: </label><input type="text" name="item"><button class="add-button">Add item</button> 
+    </div>
+    <ul>
+    </ul>
+
+    <script>
+      function addItem() {
+        const input = document.querySelector('input');
+        
+        const ul = document.querySelector('ul');
+        
+        const newLi = document.createElement('li');
+        newLi.textContent = input.value + "; ";
+        const liButton = document.createElement('button');
+        liButton.textContent = "Delete";
+        liButton.classList.add('delete-button');
+
+        newLi.appendChild(liButton);
+        ul.appendChild(newLi);
+
+        input.value = '';
+        
+        const deleteButtons = document.querySelectorAll('.delete-button');
+        deleteButtons.forEach((button) => {
+          button.addEventListener('click', (event) => {
+            event.currentTarget.parentNode.remove();
+          });
+        });
+      }
+
+      const addButton = document.querySelector('.add-button');
+      addButton.addEventListener('click', addItem);
+    </script>
+  </body>
+</html>
+

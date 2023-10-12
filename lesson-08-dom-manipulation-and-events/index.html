@@ -7,7 +7,13 @@
   
   <body>
     <h1>DOM manipulation and events practice</h1>
+    <!-- Testing DOM manipulation -->
     <div id="container"></div>
+
+    <!-- Testing events with buttons -->
+    <button onclick="alert('Inline method button!')">Click me!</button>
+    <button class="button2">Click me!</button>
+    <button class="button3">Click me!</button>
 
     <script>
       const container = document.querySelector('#container');
@@ -39,6 +45,12 @@
       div.appendChild(divParagraph);
 
       container.appendChild(div);
+
+      const button2 = document.querySelector('.button2');
+      button2.onclick = () => alert("Using 'onclick' propriety with JS!");
+
+      const button3 = document.querySelector('.button3');
+      button3.addEventListener('click', (event) => alert("I'm using event listener!"));
     </script>
   </body> 
 </html>
